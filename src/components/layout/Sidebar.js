@@ -28,7 +28,7 @@ export const Sidebar = () => {
             role="button"
             onClick={() => {
               setActive("inbox");
-              // setSelectedProject("INBOX");
+              setSelectedProject("INBOX");
             }}
             onKeyDown={() => {
               setActive("inbox");

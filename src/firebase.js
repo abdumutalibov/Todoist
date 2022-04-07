@@ -3,9 +3,8 @@
 // import 'firebase/compat/firestore';
 
 // import firebase from 'firebase/app';
-import * as firebase from "firebase/app"
-import "firebase/firestore";
-
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 const firebaseConfig = firebase.initializeApp({
   apiKey: "AIzaSyBZY_JVXIgviCl9ZoK6HWm1WBGx10Ry2vk",
   authDomain: "todoist-tut-4ff5c.firebaseapp.com",

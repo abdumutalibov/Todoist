@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// import Logo from '../../../public/images/logo'
 import { FaPizzaSlice } from "react-icons/fa";
 
 import { AddTask } from "../AddTask";
@@ -12,7 +12,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
     <header className="header" data-testid="header">
       <nav>
         <div className="logo">
-          {/* <img src={Logo} alt="Todoist" /> */}
+          <img src="/images/logo.png" alt="Todoist" />
         </div>
         <div className="settings">
           <ul>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Checkbox } from "./Checkbox";
 import { AddTask } from "./AddTask";
+import { useTasks } from "../hooks";
 // import { useTasks } from "../hooks";
 // import { collatedTasks } from "../constants";
 // import { getTitle, getCollatedTitle, collatedTasksExist } from "../helpers";
@@ -9,8 +10,8 @@ import { AddTask } from "./AddTask";
 export const Tasks = () => {
   // const { selectedProject } = useSelectedProjectValue();
   // const { projects } = useProjectsValue();
-  const  tasks  = [];
-
+  const { tasks}  = useTasks('1');
+console.log(tasks);
   let projectName = "";
 
   // if (collatedTasksExist(selectedProject) && selectedProject) {
@@ -33,7 +34,7 @@ export const Tasks = () => {
   return (
     <div className="tasks" data-testid="tasks">
       {/* <h2 data-testid="project-name">{projectName}</h2> */}
-z
+
       <ul className="tasks__list">
         {tasks.map((task) => (
           <li key={`${task.id}`}>

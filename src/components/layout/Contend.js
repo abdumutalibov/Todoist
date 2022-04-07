@@ -5,7 +5,6 @@ import  {Tasks}  from "../Tasks";
 export const Content =()=>(
     <section className="content">
         <Sidebar/>
-        ssssssssssssssssss
         <Tasks/>
     </section>
 )
